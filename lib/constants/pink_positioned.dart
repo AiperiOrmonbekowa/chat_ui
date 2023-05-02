@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../theme/app_colors.dart';
 import '../theme/app_text_styles.dart';
-import '../view/user_avatar.dart';
+import 'user_avatar.dart';
 
 class PinkPositioned extends StatelessWidget {
   const PinkPositioned({
@@ -48,14 +48,17 @@ class PinkPositioned extends StatelessWidget {
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
-                  buildContactAvatar('Азима', 'Azima.jpg'),
-                  buildContactAvatar('Айпери', 'people.jpg'),
-                  buildContactAvatar('Наргиза эже', 'nargiza.jpg'),
-                  buildContactAvatar('Рамил', 'people2.jpg'),
-                  buildContactAvatar('Айпери', 'people.jpg'),
-                  buildContactAvatar('Наргиза эже', 'nargiza.jpg'),
-                  buildContactAvatar('Азима', 'Azima.jpg'),
-                  buildContactAvatar('Рамил', 'people2.jpg'),
+                  buildContactAvatar('Azima', 'Azima.jpg'),
+                  const SizedBox(
+                    width: 12,
+                  ),
+                  buildContactAvatar('Aiperi', 'people.jpg'),
+                  buildContactAvatar('Nargiza eje', 'nargiza.jpg'),
+                  buildContactAvatar('Ramil', 'people2.jpg'),
+                  buildContactAvatar('Aiperi', 'people.jpg'),
+                  buildContactAvatar('Nargiza eje ', 'nargiza.jpg'),
+                  buildContactAvatar('Azima', 'Azima.jpg'),
+                  buildContactAvatar('Ramil', 'people2.jpg'),
                 ],
               ),
             )
